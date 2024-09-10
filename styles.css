@@ -1,0 +1,298 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    width: 100%;
+}
+
+/* Text Styles */
+p {
+    font-size: medium;
+}
+
+label {
+    color: yellow;
+    font-weight: bold;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.user-level {
+    color: red;
+}
+
+/* Form Styles */
+.login-form,
+.input-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-form {
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-area {
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+/* Button Styles */
+.enter,
+.clear,
+.reset,
+.logout {
+    color: rgb(99, 255, 47);
+    background-color: rgb(161, 123, 74);
+    font-weight: bold;
+    font-size: large;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+
+}
+
+.enter {
+    color: rgb(99, 255, 47);
+}
+
+.clear {
+    color: yellow;
+}
+
+.reset {
+    color: red;
+}
+
+.logout {
+    color: black;
+    border: 3px solid red;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Text Area Styles */
+input[type="text"],
+input[type="password"] {
+    background-color: rgb(161, 123, 74);
+    font-size: large;
+}
+
+textarea {
+    background-color: blue !important;
+    color: white;
+    font-size: large;
+    height: 16rem;
+    width: 35rem;
+}
+
+/* Header Styles */
+#root-header,
+.header {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+#error-header {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: blue;
+}
+
+/* Error Styling */
+#error {
+    color: red;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 5rem;
+    text-align: center;
+}
+
+#error-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(133, 211, 156);
+    font-size: larger;
+    gap: 1rem;
+}
+
+/* Table Styling */
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid gray;
+    padding: 1rem 0;
+    gap: 0.5rem;
+}
+
+legend {
+    color: gray;
+    font-size: small;
+    margin: 0 0.5rem;
+    padding: 0 0.25rem;
+}
+
+.table label {
+    color: white;
+}
+
+table {
+    border: 2px solid gold;
+    width: 70%;
+}
+
+.message table {
+    border: 2px solid darkgrey;
+    width: 100%;
+}
+
+td {
+    padding: 0.5rem;
+    border: 2px solid rgb(117, 117, 17);
+}
+
+.textarea {
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(161, 123, 74) !important;
+    color: black;
+    font-size: large;
+}
+
+/* operation selection styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+
+}
+
+.operation-selection {
+    background-color: dimgray;
+    padding: 2rem;
+}
+
+.operation-selection label {
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    padding: 0 0.5rem;
+}
+
+/* Result table styling */
+.results {
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    flex-direction: column;
+    /* Arranges content in a column */
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    /* Centers the table horizontally */
+    align-items: center;
+    /* Centers the table vertically */
+    width: 100%;
+    /* Ensures the div takes full width */
+    padding: 1rem;
+}
+
+.results table {
+    /* margin: 0 auto; */
+    border: 2px solid darkgrey;
+    /* Example border color */
+    /* width: 70%; */
+}
+
+.results td,
+.results th {
+    padding: 0.25rem;
+    border: .5px solid;
+    /* Example border color */
+    text-align: center;
+    /* Centers the text inside table cells */
+}
+
+.results th {
+    background-color: red;
+    /* Example background color */
+    color: black;
+    /* Example text color */
+    font-weight: bold
+}
+
+.results tr:nth-child(even) {
+    background-color: white;
+    /* Example background color */
+    color: black;
+    /* Example text color */
+}
+
+.results tr:nth-child(odd) {
+    background-color: lightgray;
+    /* Example background color */
+    color: black;
+    /* Example text color */
+}
+
+.results p {
+    font-weight: bold;
+    text-align: center;
+}

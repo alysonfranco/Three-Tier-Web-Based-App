@@ -1,0 +1,107 @@
+<web-app>
+    <display-name>
+        CNT 4714: Project 3
+    </display-name>
+    <description>A servlet/jsp-based multi-tiered enterprise application using a Tomcat container.</description>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet Definitions -->
+
+    <!-- redirection -->
+    <servlet>
+        <servlet-name>alpha</servlet-name>
+        <description> A redirection/re-routing servlet </description>
+        <servlet-class>RedirectionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>alpha</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <!-- Root User Servlet -->
+    <servlet>
+        <servlet-name>beta</servlet-name>
+        <description> root level user </description>
+        <servlet-class>RootUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>beta</servlet-name>
+        <url-pattern>/rootservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Client User Servlet -->
+    <servlet>
+        <servlet-name>gamma</servlet-name>
+        <description> client level user </description>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gamma</servlet-name>
+        <url-pattern>/clientservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Accountant Servlet  -->
+    <servlet>
+        <servlet-name>delta</servlet-name>
+        <description> accountant level user </description>
+        <servlet-class>AccountantServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delta</servlet-name>
+        <url-pattern>/accountantservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ Start of Data Entry Servlets ~~~~~~~~~~~~~~~~~~~~~~~~  -->
+
+    <!-- Supplier Record Servlet -->
+    <servlet>
+        <servlet-name>one</servlet-name>
+        <description> Add Supplier Record </description>
+        <servlet-class>AddSupplierRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>one</servlet-name>
+        <url-pattern>/supplierrecordservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Part Record Servlet -->
+    <servlet>
+        <servlet-name>two</servlet-name>
+        <description> Add Parts Record </description>
+        <servlet-class>AddPartRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>two</servlet-name>
+        <url-pattern>/partrecordservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Job Record Servlet -->
+    <servlet>
+        <servlet-name>three</servlet-name>
+        <description> Add Jobs Record </description>
+        <servlet-class>AddJobRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>three</servlet-name>
+        <url-pattern>/jobrecordservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Shipments Record Servlet -->
+    <servlet>
+        <servlet-name>four</servlet-name>
+        <description> Add Shipments Record </description>
+        <servlet-class>AddShipmentRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>four</servlet-name>
+        <url-pattern>/shipmentrecordservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ End of Data Entry Servlets ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+</web-app>
